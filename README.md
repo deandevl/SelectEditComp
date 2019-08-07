@@ -2,7 +2,7 @@
 
 **select-edit-comp** is a web component (Vue.js >= 2.5) similar to an HTML select element where an item is selected from a list.  In addition to selection, the user can interactively add/delete items from the selection list.   
 
-**select-edit-comp**  depends on the [vue.js](https://vuejs.org/ "Vue.js") framework.  The dependency can be installed via [npm install](https://docs.npmjs.com/cli/install.html "npm install") with the included `package.json` file. Three [webpack](https://webpack.js.org/concepts/) npm scripts are included for building  development, production, or hot recompile/execute of the demo.   `build-dev` and `build-prod` scripts produce  a `dist` folder containing the `index.html`.  The size of the `main.js` bundle using `build-prod` is 9 KiB along with calling a CDN for incorporating the Vue framework.
+ **select-edit-comp** can be installed via with the included `package.json` file for a local installation via the [npm install](https://docs.npmjs.com/cli/install.html "npm install") command.  **select-edit-comp** depends on the [vue.js](https://vuejs.org/ "Vue.js") framework.  A demo folder is provided that used [Parcel](https://parceljs.org/) together with its associated `package.json` file to bundle together  **select-edit-comp** along with its [vue.js](https://vuejs.org/ "Vue.js") dependency for a simple application.  Further details are provided below for running the demo.
 
 ## Props
 
@@ -12,7 +12,7 @@ A prop in Vue.js is a custom attribute for passing information from a parent com
 
 `items` -- an array of strings that sets the items from which to select (array, default: null)
 
-`select_value` -- when assigned by the parent, sets the current seleced  value if  the value is a member of `items` Can be assigned to a static string or bound to a parent's data member. (string, default: null) 
+`select_value` -- when assigned by the parent, sets the current selected  value if  the value is a member of `items` Can be assigned to a static string or bound to a parent's data member. (string, default: null) 
 
 `heading` -- a heading to be displayed above the selection box (string,default: null) 
 
@@ -91,7 +91,7 @@ The demonstration shows how the event can be incorporated.
 
 One demonstration of **select-edit-comp** is provided in the folder named `demo/dist` and can be viewed by hosting the `index.html`file.  The demo (templated in the `App.vue` file) displays two independent **select-edit-comp**  components along with buttons which when clicked will make changes to the selection list.  Try typing in new values to the selection or delete a selected value along with monitoring the console.log.
 
-As a suggestion, install [http-server](https://www.npmjs.com/package/http-server "http-server") globally via [npm](https://www.npmjs.com/ "npm") then enter the command `http-server`in the **select-edit-comp** `dist` directory.  From a browser enter the url: `localhost:8080/` to view the demo.
+As a suggestion, install [http-server](https://www.npmjs.com/package/http-server "http-server") locally/globally via [npm](https://www.npmjs.com/ "npm") then enter the command `http-server`in the **select-edit-comp** `dist` directory.  From a browser enter the url: `localhost:8080/` to view the demo.
 
 Here is some example code for using **select-edit-comp** taken from the `App.vue` file:
 
