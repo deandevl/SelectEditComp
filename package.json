@@ -1,0 +1,20 @@
+{
+  "name": "selecteditcomp",
+  "version": "1.0.0",
+  "description": "A web component (Vue.js >= 2.5) similar to an HTML select tag where an input box is attached to add or delete an item from the list dynamically. ",
+  "main": "SelectEditComp.vue",
+  "repository": "git+https://github.com/deandevl/SelectEditComp.git",
+  "keywords": [
+    "Vue.js",
+    "SelectEditComp"
+  ],
+  "author": "Rick Dean",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deandevl/SelectEditComp/issues"
+  },
+  "homepage": "https://github.com/deandevl/SelectEditComp#readme",
+  "dependencies": {
+    "vue": "^2.5.9"
+  }
+}
